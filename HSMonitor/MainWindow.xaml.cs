@@ -163,16 +163,30 @@ namespace HSMonitor
                                 gpuprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(255, 0, 0));
                             gpuprocessbar.Value = sensor.Value.Value;
                         }
-                        else if(sensor.SensorType == SensorType.Load && sensor.Name == "GPU Memory")
+                        else if(sensor.SensorType == SensorType.Load)
                         {
-                            gpuhasznalat += $"{Math.Round(sensor.Value.Value, 1):N0}%\r\n";
-                            if (Math.Round(sensor.Value.Value, 1) < 50)
-                                vidmemprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(0, 255, 0));
-                            else if (Math.Round(sensor.Value.Value, 1) < 80)
-                                vidmemprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(255, 153, 0));
-                            else
-                                vidmemprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(255, 0, 0));
-                            vidmemprocessbar.Value = sensor.Value.Value;
+                            if (sensor.Name == "GPU Core")
+                            {
+                                videokartyahasznalat1.Content = $"{Math.Round(sensor.Value.Value, 0):N0}%\r\n";
+                                if (Math.Round(sensor.Value.Value, 1) < 50)
+                                    gpuhasznalatprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(0, 255, 0));
+                                else if (Math.Round(sensor.Value.Value, 1) < 80)
+                                    gpuhasznalatprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(255, 153, 0));
+                                else
+                                    gpuhasznalatprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+                                gpuhasznalatprocessbar.Value = Math.Round(sensor.Value.Value, 0);
+                            }
+                            else if (sensor.Name == "GPU Memory")
+                            {
+                                gpuhasznalat += $"{Math.Round(sensor.Value.Value, 1):N0}%\r\n";
+                                if (Math.Round(sensor.Value.Value, 1) < 50)
+                                    vidmemprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(0, 255, 0));
+                                else if (Math.Round(sensor.Value.Value, 1) < 80)
+                                    vidmemprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(255, 153, 0));
+                                else
+                                    vidmemprocessbar.Foreground = new SolidColorBrush(Color.FromRgb(255, 0, 0));
+                                vidmemprocessbar.Value = sensor.Value.Value;
+                            }
                         }
                         else if(sensor.SensorType == SensorType.Fan)
                         {

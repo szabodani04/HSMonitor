@@ -34,23 +34,26 @@
         <Label x:Name="ramload" Content="N/A" HorizontalAlignment="Left" Margin="578,200,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
         <Label Content="Memória használata:" HorizontalAlignment="Left" Margin="428,198,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <ProgressBar x:Name="ramprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,200,0,0" VerticalAlignment="Top" Width="138" Background="{x:Null}" Foreground="{x:Null}"/>
-        <Label x:Name="videokartyaho" Content="N/A" HorizontalAlignment="Left" Margin="575,261,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
+        <Label x:Name="videokartyaho" Content="N/A" HorizontalAlignment="Left" Margin="575,290,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
         <Label x:Name="videokartyahasznalat" Content="N/A" HorizontalAlignment="Left" Margin="577,231,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
-        <Label Content="Videókártya hőfok:" HorizontalAlignment="Left" Margin="428,260,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <ProgressBar x:Name="gpuprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,262,0,0" VerticalAlignment="Top" Width="138" Maximum="80" Background="{x:Null}" Foreground="{x:Null}"/>
+        <Label Content="Videókártya hőfok:" HorizontalAlignment="Left" Margin="428,289,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ProgressBar x:Name="gpuprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,291,0,0" VerticalAlignment="Top" Width="138" Maximum="80" Background="{x:Null}" Foreground="{x:Null}"/>
         <Label Content="Videókártya memória:" HorizontalAlignment="Left" Margin="428,229,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <ProgressBar x:Name="vidmemprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,231,0,0" VerticalAlignment="Top" Width="138" Background="{x:Null}" Foreground="{x:Null}"/>
         <Label x:Name="processzorhasznalat" Content="N/A" HorizontalAlignment="Left" Margin="577,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,0.577" Panel.ZIndex="1"/>
         <Label Content="Processzor használat:" HorizontalAlignment="Left" Margin="428,136,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <ProgressBar x:Name="procprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,138,0,0" VerticalAlignment="Top" Width="138" Background="{x:Null}" Foreground="{x:Null}"/>
-        <Label x:Name="fanspeed" Content="N/A" HorizontalAlignment="Left" Margin="578,292,0,0" VerticalAlignment="Top" Height="25" Width="62" Panel.ZIndex="1"/>
-        <Label Content="Videókártya ventillátor:" HorizontalAlignment="Left" Margin="428,291,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <ProgressBar x:Name="gpuventiprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,292,0,0" VerticalAlignment="Top" Width="138" Maximum="2000" Minimum="500" Background="{x:Null}" Foreground="{x:Null}"/>
+        <Label x:Name="fanspeed" Content="N/A" HorizontalAlignment="Left" Margin="578,323,0,0" VerticalAlignment="Top" Height="25" Width="62" Panel.ZIndex="1"/>
+        <Label Content="Videókártya ventillátor:" HorizontalAlignment="Left" Margin="428,322,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ProgressBar x:Name="gpuventiprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,323,0,0" VerticalAlignment="Top" Width="138" Maximum="2000" Minimum="500" Background="{x:Null}" Foreground="{x:Null}"/>
         <Label Content="Processzor hőfok:" HorizontalAlignment="Left" Margin="428,166,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label x:Name="processzorhofok" Content="N/A" HorizontalAlignment="Left" Margin="577,169,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,0.577" Panel.ZIndex="1"/>
         <ProgressBar x:Name="prochoprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,168,0,0" VerticalAlignment="Top" Width="138" Background="{x:Null}" Foreground="{x:Null}"/>
-        <ListBox x:Name="disks" HorizontalAlignment="Left" Height="147" Margin="432,345,0,0" VerticalAlignment="Top" Width="193" BorderBrush="{x:Null}" Background="{x:Null}" IsHitTestVisible="False"/>
-        <Label Content="Partíciók:" HorizontalAlignment="Left" Margin="428,325,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ListBox x:Name="disks" HorizontalAlignment="Left" Height="147" Margin="432,381,0,0" VerticalAlignment="Top" Width="193" BorderBrush="{x:Null}" Background="{x:Null}" IsHitTestVisible="False"/>
+        <Label Content="Partíciók:" HorizontalAlignment="Left" Margin="428,361,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label x:Name="memusge" Content="." HorizontalAlignment="Left" Margin="675,200,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="videokartyahasznalat1" Content="N/A" HorizontalAlignment="Left" Margin="577,260,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
+        <ProgressBar x:Name="gpuhasznalatprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,260,0,0" VerticalAlignment="Top" Width="138" Background="{x:Null}" Foreground="{x:Null}"/>
+        <Label Content="Videókártya használat:" HorizontalAlignment="Left" Margin="426,260,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
     </Grid>
 </Window>
