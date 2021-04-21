@@ -1,0 +1,17 @@
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\bin\Debug\HSMonitor.exe.config
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\bin\Debug\HSMonitor.exe
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\bin\Debug\HSMonitor.pdb
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor.csprojAssemblyReference.cache
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\MainWindow.g.cs
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\App.g.cs
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor_MarkupCompile.cache
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor_MarkupCompile.lref
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\MainWindow.baml
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor.g.resources
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor.Properties.Resources.resources
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor.csproj.GenerateResource.cache
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor.csproj.CoreCompileInputs.cache
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor.exe
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor.pdb
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\Szabó Dániel Márk\source\repos\HSMonitor\HSMonitor\obj\Debug\HSMonitor.csproj.CopyComplete

@@ -1,0 +1,56 @@
+﻿<Window x:Name="Hardware_Software_Monitor" x:Class="HSMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HSMonitor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="711" Width="1382.5" ResizeMode="NoResize" Background="#FFCFCFCF">
+    <Grid x:Name="oprendszer">
+        <Label x:Name="alaplapgyarto" Content="asd" HorizontalAlignment="Left" Margin="74,15,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="processzornev" Content="asd" HorizontalAlignment="Left" Margin="95,44,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="processzormag" Content="asd" HorizontalAlignment="Left" Margin="144,68,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="oprendszer1" Content="asd" HorizontalAlignment="Left" Margin="147,97,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <ListBox x:Name="programok" HorizontalAlignment="Left" Height="569" Margin="804,49,0,0" VerticalAlignment="Top" Width="549" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <ListBox x:Name="ram" HorizontalAlignment="Left" Height="116" Margin="23,235,0,0" VerticalAlignment="Top" Width="339" Background="{x:Null}" BorderBrush="{x:Null}" IsHitTestVisible="False"/>
+        <ListBox x:Name="hattertarlist" HorizontalAlignment="Left" Height="111" Margin="22,384,0,0" VerticalAlignment="Top" Width="339" Background="{x:Null}" BorderBrush="{x:Null}" IsHitTestVisible="False"/>
+        <Label Content="Memóriák:" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Háttértárak:" HorizontalAlignment="Left" Margin="10,358,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="save" Content="Harverelemek mentése" HorizontalAlignment="Left" Margin="624,623,0,0" VerticalAlignment="Top" Width="158" Click="save_Click_1" Height="34" FontSize="14" Background="#FFADDADC"/>
+        <ListBox x:Name="hang" HorizontalAlignment="Left" Height="158" Margin="24,518,0,0" VerticalAlignment="Top" Width="339" Background="{x:Null}" BorderBrush="{x:Null}" IsHitTestVisible="False"/>
+        <Label Content="Audioeszközök:" HorizontalAlignment="Left" Margin="12,492,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <ListBox x:Name="videokartyalista" HorizontalAlignment="Left" Height="50" Margin="23,160,0,0" VerticalAlignment="Top" Width="339" Background="{x:Null}" BorderBrush="{x:Null}" IsHitTestVisible="False"/>
+        <Button x:Name="alkalmazasment" Content="Programok listájának mentése" HorizontalAlignment="Left" Margin="1147,623,0,0" VerticalAlignment="Top" Width="206" Height="34" FontSize="14" Background="#FFADDADC" Click="alkalmazasment_Click"/>
+        <Label Content="Alaplap:" HorizontalAlignment="Left" Margin="11,15,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Processzor:" HorizontalAlignment="Left" Margin="11,44,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Processzor magok:" HorizontalAlignment="Left" Margin="11,68,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Operációs rendszer:" HorizontalAlignment="Left" Margin="11,97,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Videókártyák:" HorizontalAlignment="Left" Margin="11,136,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Alkalmazások listája:" HorizontalAlignment="Left" Margin="804,15,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="procsensor" Content="N/A" HorizontalAlignment="Left" Margin="427,39,0,0" VerticalAlignment="Top" Height="94" Width="139"/>
+        <Label x:Name="procusage" Content="N/A" HorizontalAlignment="Left" Margin="575,39,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.454,0.221"/>
+        <Label Content="Processzorhőmérséklet:" HorizontalAlignment="Left" Margin="427,21,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Processzorhazsnálat:" HorizontalAlignment="Left" Margin="571,21,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="ramload" Content="N/A" HorizontalAlignment="Left" Margin="578,200,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
+        <Label Content="Memória használata:" HorizontalAlignment="Left" Margin="428,198,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ProgressBar x:Name="ramprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,200,0,0" VerticalAlignment="Top" Width="138" Background="{x:Null}" Foreground="{x:Null}"/>
+        <Label x:Name="videokartyaho" Content="N/A" HorizontalAlignment="Left" Margin="575,261,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
+        <Label x:Name="videokartyahasznalat" Content="N/A" HorizontalAlignment="Left" Margin="577,231,0,0" VerticalAlignment="Top" Panel.ZIndex="1"/>
+        <Label Content="Videókártya hőfok:" HorizontalAlignment="Left" Margin="428,260,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ProgressBar x:Name="gpuprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,262,0,0" VerticalAlignment="Top" Width="138" Maximum="80" Background="{x:Null}" Foreground="{x:Null}"/>
+        <Label Content="Videókártya memória:" HorizontalAlignment="Left" Margin="428,229,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ProgressBar x:Name="vidmemprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,231,0,0" VerticalAlignment="Top" Width="138" Background="{x:Null}" Foreground="{x:Null}"/>
+        <Label x:Name="processzorhasznalat" Content="N/A" HorizontalAlignment="Left" Margin="577,137,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,0.577" Panel.ZIndex="1"/>
+        <Label Content="Processzor használat:" HorizontalAlignment="Left" Margin="428,136,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ProgressBar x:Name="procprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,138,0,0" VerticalAlignment="Top" Width="138" Background="{x:Null}" Foreground="{x:Null}"/>
+        <Label x:Name="fanspeed" Content="N/A" HorizontalAlignment="Left" Margin="578,292,0,0" VerticalAlignment="Top" Height="25" Width="62" Panel.ZIndex="1"/>
+        <Label Content="Videókártya ventillátor:" HorizontalAlignment="Left" Margin="428,291,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <ProgressBar x:Name="gpuventiprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,292,0,0" VerticalAlignment="Top" Width="138" Maximum="2000" Minimum="500" Background="{x:Null}" Foreground="{x:Null}"/>
+        <Label Content="Processzor hőfok:" HorizontalAlignment="Left" Margin="428,166,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="processzorhofok" Content="N/A" HorizontalAlignment="Left" Margin="577,169,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,0.577" Panel.ZIndex="1"/>
+        <ProgressBar x:Name="prochoprocessbar" HorizontalAlignment="Left" Height="26" Margin="579,168,0,0" VerticalAlignment="Top" Width="138" Background="{x:Null}" Foreground="{x:Null}"/>
+        <ListBox x:Name="disks" HorizontalAlignment="Left" Height="147" Margin="432,345,0,0" VerticalAlignment="Top" Width="193" BorderBrush="{x:Null}" Background="{x:Null}" IsHitTestVisible="False"/>
+        <Label Content="Partíciók:" HorizontalAlignment="Left" Margin="428,325,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="memusge" Content="." HorizontalAlignment="Left" Margin="675,200,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
